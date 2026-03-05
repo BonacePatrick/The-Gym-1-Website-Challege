@@ -9,7 +9,7 @@
   </head>
   <body class="bg-white">
     <!-- Navigation -->
-    <header class="flex items-center justify-around mx-6 p-4">
+    <header class="flex items-center justify-around mx-6 p-4 hidden lg:flex">
       <!-- logo -->
       <div class="w-48">
         <img
@@ -48,12 +48,12 @@
       </nav>
     </header>
     <!-- hero -->
-    <section class="hero-bg flex flex-col items-center justify-center px-10">
-      <h1 class="text-white text-4xl mb-36 mt-10">
+    <section class="hero-bg flex flex-col items-center justify-center px-4 lg:px-10">
+      <h1 class="text-white text-4xl mb-20 lg:mb-36 mt-10">
         All the accommodation just for you
       </h1>
       <div
-        class="bg-gray-100 p-3 w-full flex items-center gap-5 border border-gray-200 rounded-2xl"
+        class="bg-gray-100 mb-4 p-3 w-full flex flex-col lg:flex-row items-center gap-5 border border-gray-200 rounded-2xl"
       >
         <!-- input location -->
         <div class="relative">
@@ -63,7 +63,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 absolute bottom-4 left-3"
+            class="size-6 absolute bottom-2 lg:bottom-4 left-3"
           >
             <path
               stroke-linecap="round"
@@ -79,7 +79,7 @@
 
           <input
             type="text"
-            class="py-4 px-10 w-80 bg-white border border-gray-300 rounded-2xl"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-72 bg-white border border-gray-300 rounded-2xl"
             placeholder="Where should we go?"
           />
         </div>
@@ -92,7 +92,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 absolute bottom-4 left-3"
+            class="size-6 absolute bottom-2 lg:bottom-4 left-3"
           >
             <path
               stroke-linecap="round"
@@ -103,7 +103,7 @@
 
           <input
             type="date"
-            class="py-4 px-10 w-80 bg-white border border-gray-300 rounded-2xl flex flex-col"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-72 bg-white border border-gray-300 rounded-2xl flex flex-col"
           />
         </div>
 
@@ -115,7 +115,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 absolute bottom-4 left-3"
+            class="size-6 absolute bottom-2 lg:bottom-4  left-3"
           >
             <path
               stroke-linecap="round"
@@ -126,20 +126,20 @@
 
           <input
             type="text"
-            class="py-4 px-10 w-80 bg-white border border-gray-300 rounded-2xl"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-72 bg-white border border-gray-300 rounded-2xl"
             placeholder="Guests"
           />
         </div>
 
         <!-- search button -->
-        <button class="py-3 px-4 border rounded-full bg-gray-300 text-white">
+        <button class="py-3 px-10 lg:px-4 border rounded-full bg-gray-300 text-white">
           Search
         </button>
       </div>
     </section>
 
     <!-- trips section -->
-    <section class="min-h-screen bg-white p-10">
+    <section class="min-h-screen bg-white p-3 lg:p-10">
       <div
         class="bg-[#181F3B] min-h-[11vh] p-3 flex items-center justify-between border border-[#181F3B] rounded-2xl"
       >
@@ -159,7 +159,7 @@
               d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
             />
           </svg>
-          <h3 class="text-white text-sm">
+          <h3 class="text-white text-xs md:text-sm">
             Sign up to send a message to the host and get more details about an
             accommodation.
           </h3>
@@ -180,10 +180,10 @@
             Offers for the period:10. Apr.–12. Apr.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-6">
           <!-- first item 1 -->
           <div>
-            <div class="w-72 h-72 relative">
+            <div class="w-full lg:w-72 h-72 relative">
               <div
                 class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
               >
@@ -260,7 +260,7 @@
 
           <!-- first item 2 -->
           <div>
-            <div class="w-72 h-72 relative">
+            <div class="w-full lg:w-72 h-72 relative">
               <div
                 class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
               >
@@ -340,7 +340,7 @@
 
           <!-- first item 3 -->
           <div>
-            <div class="w-72 h-72 relative">
+            <div class="w-[95%] lg:w-72 h-72 relative">
               <div
                 class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
               >
@@ -421,7 +421,7 @@
 
           <!-- first item 4 -->
           <div>
-            <div class="w-72 h-72 relative">
+            <div class="w-full lg:w-72 h-72 relative">
               <div
                 class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
               >
@@ -504,12 +504,12 @@
     </section>
 
     <!-- Find accomodation -->
-    <section class="min-h-screen bg-white p-10">
+    <section class="min-h-screen bg-white p-3 lg:p-10">
       <div class="mt-16">
         <h3 class="text-black text-3xl">Find the perfect accommodation</h3>
       </div>
       <!-- menu -->
-      <div class="flex items-center gap-6 mt-10">
+      <div class="hidden lg:flex items-center gap-6 mt-10">
         <!-- icon 1 -->
         <div class="flex flex-col gap-1">
           <svg
@@ -673,9 +673,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
         <!-- item 1 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -713,9 +713,9 @@
 
         <!-- item 2 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -753,9 +753,9 @@
 
         <!-- item 3 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -793,9 +793,9 @@
 
         <!-- item 4 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -833,9 +833,9 @@
 
         <!-- item 5 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -873,9 +873,9 @@
 
         <!-- item 6 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -913,9 +913,9 @@
 
         <!-- item 7 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -953,9 +953,9 @@
 
         <!-- item 8 -->
         <div
-          class="w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
         >
-          <div class="w-80 h-56 overflow-hidden">
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
             <img
               src="https://picsum.photos/200/300"
               alt="item"
@@ -1012,10 +1012,10 @@
 
     <!-- info -->
     <section
-      class="p-6 bg-[#EAF4FF] flex items-center border-[#EAF4FF] rounded-3xl mx-6 mb-10"
+      class="p-4 lg:p-6 bg-[#EAF4FF] flex flex-col lg:flex-row items-center border-[#EAF4FF] rounded-3xl mx-0 lg:mx-6 mb-10"
     >
       <!-- item 1 -->
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col lg:flex-row items-center gap-3">
         <!-- icon -->
         <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
           <svg
@@ -1033,9 +1033,9 @@
             />
           </svg>
         </div>
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col items-center lg:items-start gap-1">
           <h3 class="">We know just the right place.</h3>
-          <p class="text-black text-sm">
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
             On the beach. Or right by the slope. Find accommodations for every
             occasion.
           </p>
@@ -1043,7 +1043,7 @@
       </div>
 
       <!-- item 2 -->
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col lg:flex-row items-center gap-3">
         <!-- icon -->
         <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
           <svg
@@ -1061,9 +1061,9 @@
             />
           </svg>
         </div>
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col items-center lg:items-start gap-1">
           <h3 class="">Carefree with FeWo-direct™</h3>
-          <p class="text-black text-sm">
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
             If something goes wrong during your stay, we are here for you – we
             want to find a good solution for you.
           </p>
@@ -1071,7 +1071,7 @@
       </div>
 
       <!-- item 3 -->
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col lg:flex-row items-center gap-3">
         <!-- icon -->
         <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
           <svg
@@ -1089,9 +1089,9 @@
             />
           </svg>
         </div>
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col items-center lg:items-start gap-1">
           <h3 class="">There for you day and night.</h3>
-          <p class="text-black text-sm">
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
             Real people. Real support. 24/7 – before, during or after your stay.
           </p>
         </div>
@@ -1099,11 +1099,11 @@
     </section>
 
     <!-- meeting -->
-    <section class="meeting-bg mx-10 rounded-3xl flex items-center">
-      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-96 ml-10">
+    <section class="meeting-bg mx-3 lg:mx-10 rounded-3xl flex items-center">
+      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-[85%] mx-auto lg:mx-0 lg:w-80 lg:w-96 lg:ml-10">
         <div class="flex flex-col gap-3">
           <h3 class="text-black text-2xl">Early bird offers: Save over 80 €</h3>
-          <p class="text-black text-sm">
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
             Save a lot if you book early. The average saving is 106 €. Only at
             selected holiday accommodations.*
           </p>
@@ -1116,13 +1116,13 @@
 
     <!-- service -->
     <section
-      class="min-h-screen bg-white p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      class="min-h-screen bg-white p-3 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
     >
       <!-- item 1 -->
       <div
-        class="w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
       >
-        <div class="w-97 h-80 overflow-hidden">
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
           <img
             src="https://picsum.photos/200/300"
             alt="item"
@@ -1149,9 +1149,9 @@
 
       <!-- item 2 -->
       <div
-        class="w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
       >
-        <div class="w-97 h-80 overflow-hidden">
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
           <img
             src="https://picsum.photos/200/300"
             alt="item"
@@ -1180,9 +1180,9 @@
 
       <!-- item 3 -->
       <div
-        class="w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
       >
-        <div class="w-97 h-80 overflow-hidden">
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
           <img
             src="https://picsum.photos/200/300"
             alt="item"
@@ -1210,10 +1210,10 @@
 
     <!-- Cta -->
 
-    <section class="cta-bg mx-10 rounded-3xl flex items-center">
-      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-100 ml-10">
+    <section class="cta-bg mx-3 lg:mx-10 rounded-3xl flex items-center">
+      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-[85%] mx-auto lg:mx-0 lg:w-100 lg:ml-10">
         <div class="flex flex-col gap-3">
-          <h3 class="text-black text-4xl tracking-wide">
+          <h3 class="text-black text-2xl lg:text-4xl tracking-wide">
             Rent your accommodation with confidence with FeWo-direkt
           </h3>
           <p class="text-black text-sm">
@@ -1232,7 +1232,7 @@
     <footer class="bg-[#F7F6F9] min-h-[60vh] p-6 mt-10">
       <h1 class="text-blue-500 text-3xl my-6">FeWo-direkt</h1>
 
-      <div class="flex gap-10 lg:gap-56 mb-6">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-56 mb-6">
         <!-- content 1 -->
         <div class="flex gap-4">
           <!-- link 1 -->
